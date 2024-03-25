@@ -1,0 +1,129 @@
+@import url(./font.css);
+
+* {
+  font-family: "IRANYekan";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(189, 189, 189);
+  background: radial-gradient(
+    circle,
+    rgba(189, 189, 189, 1) 0%,
+    rgba(180, 81, 246, 1) 60%,
+    rgba(70, 147, 252, 1) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  margin: 2rem auto;
+}
+
+.modal-btn {
+  color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 0.6rem;
+  font-weight: 900;
+  margin: 0 5rem;
+  padding: 1.5rem 3rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(0.8px);
+  z-index: 10;
+}
+
+.modal {
+  min-width: 30rem;
+  max-width: 50rem;
+  border: 0;
+  padding: 1.3rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 18px rgb(219, 219, 219);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 20;
+}
+
+.modal__title {
+  padding-bottom: 1.7rem;
+  color: rgb(77, 77, 77);
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.modal__content {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  gap: 2rem;
+  border-bottom: 1px solid rgb(150, 150, 150);
+  padding: 2rem 0;
+}
+
+.modal__img {
+  width: 30%;
+}
+
+.modal__img img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.modal__text h3 {
+  padding-bottom: 1.7rem;
+  color: rgb(77, 77, 77);
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.modal__text p {
+  color: rgb(88, 88, 88);
+  font-size: 1.2rem;
+  padding-bottom: 1.4rem;
+}
+
+.modal__footer {
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: end;
+}
+
+.btn {
+  padding: 0.7rem 1.7rem;
+  border: 0;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.no {
+  background-color: rgb(46, 46, 46);
+}
+
+.yes {
+  background-color: rgb(0, 212, 0);
+}

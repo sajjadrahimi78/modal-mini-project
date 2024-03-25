@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="./src/style/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <button class="modal-btn yes">روم کلیک کن تا باز بشم !</button>
+
+      <div class="backdrop hidden"></div>
+
+      <section class="modal hidden">
+        <h2 class="modal__title">یک عکس را انتخاب کنید</h2>
+        <main class="modal__content">
+          <div class="modal__img">
+            <img src="./img/me.jpg" alt="avatar" />
+          </div>
+          <div class="modal__text">
+            <h3>پروفایل پیشفرض</h3>
+            <p>
+              ما تصویر گراواتار زیر را پیدا کردیم که با آدرس ایمیل شما مرتبط است.
+            </p>
+
+            <p>آیا استفاده از این عکس اشکالی ندارد؟</p>
+          </div>
+        </main>
+        <footer class="modal__footer">
+            <button class="no btn">نه !!!</button>
+          <button class="yes btn">ن ، مشکلی نداره :)</button>
+        </footer>
+      </section>
+    </div>
+
+    <script src="./src/js/modal.js"></script>
+  </body>
+</html>
